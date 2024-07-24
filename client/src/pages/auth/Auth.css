@@ -1,0 +1,64 @@
+/* Ensure that the html and body elements take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* The wrapper for the auth content */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Remove the box styling from the auth card */
+.auth-card {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    text-align: center;
+}
+
+/* Styling for the buttons to add some spacing between them */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.auth-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.auth-button.sign-up {
+    background: #007bff;
+    color: #fff;
+}
+
+.auth-button.sign-up:hover {
+    background: #0056b3;
+}
+
+.auth-button.sign-in {
+    background: #28a745;
+    color: #fff;
+}
+
+.auth-button.sign-in:hover {
+    background: #218838;
+}
